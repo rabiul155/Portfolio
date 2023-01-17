@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 
 
 const ContuctMe = () => {
+
     useEffect(() => {
         AOS.init(
             {
@@ -32,12 +33,16 @@ const ContuctMe = () => {
         <div id='contuctMe'>
             <div className=" min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row justify-evenly">
+
+
                     <div data-aos="fade-right" className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Get In Touch <br />
                             <span className='text-yellow-500'>Contuct Me</span></h1>
                         <p className="py-6"></p>
                     </div>
-                    <div data-aos="fade-left" className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
+
+
+                    <div data-aos="fade-left" className="card hover:shadow-slate-400 flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
 
                         <form ref={form} onSubmit={sendEmail}>
                             <div className="card-body">
