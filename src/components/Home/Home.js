@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import img from '../../images/brand.PNG';
-import resume from './resume-final.pdf'
+import resume from './resume.pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Typewriter from 'typewriter-effect';
