@@ -24,7 +24,7 @@ const Home = () => {
                         <img src={img} className="md:relative -top-14 left-0 max-w-sm md:max-w-lg rounded-full " alt="" />
                     </div>
 
-                    <div data-aos="fade-left" className='mt-28 mx-5'>
+                    <div data-aos="fade-left" className='lg:mt-28 mt-5 mx-5'>
                         <h1 className="text-5xl font-bold">Hello! I am <br /><span className='text-yellow-500'>Rabiul Islam</span></h1>
                         <div className="py-6 text-3xl font-bold text-secondary">
                             <Typewriter

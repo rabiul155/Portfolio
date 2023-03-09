@@ -1,20 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import p1 from '../../images/p1.PNG'
 import p2 from '../../images/p2.PNG'
 import p3 from '../../images/1.PNG'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 
 const MyProject = () => {
 
-    useEffect(() => {
-        AOS.init(
-            {
-                duration: 1000
 
-            })
-    }, [])
     return (
         <div className=' m-4' id='project'>
             <h2 className=' text-5xl font-bold text-center m-6 text-secondary'>My Project </h2>
