@@ -1,6 +1,5 @@
 import React from 'react';
 import ContuctMe from '../ContuctMe/ContuctMe';
-
 import Education from '../Education/Education';
 import Home from '../Home/Home';
 import MyProject from '../MyProject/MyProject';

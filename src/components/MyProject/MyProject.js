@@ -8,11 +8,11 @@ const MyProject = () => {
 
 
     return (
-        <div className=' m-4' id='project'>
-            <h2 className=' text-5xl font-bold text-center m-6 text-secondary'>My Project </h2>
-            <div className='bg-base-200 grid grid-cols-1 md:grid-cols-3 p-9 gap-y-5'>
+        <div className='my-10' id='project'>
+            <h2 className=' text-5xl font-bold text-center m-10 text-secondary'>My Project </h2>
+            <div data-aos="fade-up" className='bg-base-200 grid grid-cols-1 md:grid-cols-3 gap-y-5'>
 
-                <div data-aos="fade-right" className="card hover:shadow-slate-400 card-compact w-80 bg-base-100 shadow-xl">
+                <div className="card hover:shadow-slate-400 card-compact w-[350px] mx-auto bg-base-100 shadow-xl">
                     <figure><img src={p3} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Best Sell BD</h2>
@@ -24,7 +24,7 @@ const MyProject = () => {
                 </div>
 
 
-                <div data-aos="fade-up" className="card hover:shadow-slate-400 card-compact w-80 bg-base-100 shadow-xl">
+                <div className="card hover:shadow-slate-400 card-compact w-[350px] mx-auto  bg-base-100 shadow-xl">
                     <figure><img src={p2} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">PhotoGraphyPro</h2>
@@ -35,7 +35,7 @@ const MyProject = () => {
                     </div>
                 </div>
 
-                <div data-aos="fade-left" className="card hover:shadow-slate-400 card-compact w-80 bg-base-100 shadow-xl">
+                <div className="card hover:shadow-slate-400 card-compact w-[350px] mx-auto  bg-base-100 shadow-xl">
                     <figure><img src={p1} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">LearnCode</h2>
