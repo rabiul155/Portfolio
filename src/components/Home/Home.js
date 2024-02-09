@@ -14,29 +14,29 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home-section" id="home">
+    <div className="home-section lg:h-screen" id="home">
       <div className=" py-24 px-4 sm:px-8 ">
-        <div className=" grid gird-cols-1 md:grid-cols-2">
+        <div className=" grid gird-cols-1 md:grid-cols-2 justify-center">
           <div data-aos="fade-right" className="relative flex justify-center">
             <img
               src={img}
-              className="md:absolute object-cover -left-8 lg:left-0 md:-top-4 rounded-full "
+              className="md:absolute object-cover -left-8 lg:left-0 sm:top-16 lg:-top-4 rounded-full "
               alt=""
             />
           </div>
 
           <div className="overflow-hidden">
             <div data-aos="fade-left" className="sm:mt-20">
-              <h1 className="text-4xl font-bold">
+              <h1 className="text-4xl font-bold text-center sm:text-left">
                 Hello! I am <br />
                 <span className="text-yellow-500">Rabiul Islam</span>
               </h1>
-              <div className="py-6 text-3xl font-bold text-secondary">
+              <div className="py-6 text-xl sm:text-3xl font-bold text-secondary flex justify-center sm:justify-start ">
                 <Typewriter
                   options={{
                     strings: [
                       "Junior Web Developer!!!",
-                      "Mern Stack Web Developer!!!",
+                      "MERN Stack Developer!!!",
                     ],
                     autoStart: true,
                     loop: true,
@@ -44,15 +44,18 @@ const Home = () => {
                 />
               </div>
 
-              <p className="text-wrap">
+              <p className="text-wrap text-center sm:text-left">
                 Full stack web developer with proven end-to-end development
                 skills. Knowledgeable in user interface, testing, and debugging
                 processes. I am Interested in learning the latest web
                 technology. Able to work well in teams as well as individually.
               </p>
-              <a href={resume} download>
-                {" "}
-                <button className="btn btn-primary  mt-5">My Resume</button>
+              <a
+                className="flex justify-center sm:justify-start"
+                href={resume}
+                download
+              >
+                <button className="btn btn-primary mt-5">My Resume</button>
               </a>
             </div>
           </div>
