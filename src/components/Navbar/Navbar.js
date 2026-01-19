@@ -1,36 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 
+const menuItem = (
+  <>
+    <li>
+      <HashLink smooth to="/#Home" className=" hover:text-orange-500 ">
+        Home
+      </HashLink>
+    </li>
+    <li>
+      <HashLink smooth to="/#skill" className=" hover:text-orange-500">
+        Skill
+      </HashLink>
+    </li>
+    <li>
+      <HashLink smooth to="/#project" className=" hover:text-orange-500">
+        Projects
+      </HashLink>
+    </li>
+    <li>
+      <Link to="/about" className=" hover:text-orange-500">
+        About
+      </Link>
+    </li>
+  </>
+);
+
 const Navbar = () => {
-  const menuItem = (
-    <>
-      <li>
-        <HashLink smooth to="/#Home" className=" hover:text-orange-500 ">
-          Home
-        </HashLink>
-      </li>
-      <li>
-        <HashLink smooth to="/#skill" className=" hover:text-orange-500">
-          Skill
-        </HashLink>
-      </li>
-      <li>
-        <HashLink smooth to="/#project" className=" hover:text-orange-500">
-          Projects
-        </HashLink>
-      </li>
-      <li>
-        <Link to="/about" className=" hover:text-orange-500">
-          About
-        </Link>
-      </li>
-    </>
-  );
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="navbar fixed top-0 z-50 w-full bg-base-200 font-bold px-2 md:px-20">
+    <div
+      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-500 font-bold px-2 md:px-20 ${scrolled ? "bg-base-300" : "bg-transparent"}`}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn py-2 px-1 btn-ghost lg:hidden">
