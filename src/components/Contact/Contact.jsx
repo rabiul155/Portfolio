@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 
-const ContuctMe = () => {
+export default function Contact() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -15,7 +15,7 @@ const ContuctMe = () => {
         "service_4a1zr0v",
         "template_j8mjueq",
         form.current,
-        "ZO82bw_6iD05LkU2j"
+        "ZO82bw_6iD05LkU2j",
       )
       .then(
         (result) => {
@@ -25,13 +25,14 @@ const ContuctMe = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
+
   return (
-    <div id="contuctMe" className=" m-4">
+    <div id="contact" className=" m-4">
       <h2 className=" text-4xl text-center font-bold text-yellow-400 uppercase p-4">
-        Get In tocuh
+        Get In touch
       </h2>
       <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -48,7 +49,7 @@ const ContuctMe = () => {
               className="card mx-8 w-full max-w-md shadow-xl bg-base-100"
             >
               <h2 className=" text-3xl text-center font-bold text-primary uppercase pt-6">
-                Contuct Me
+                Contact Me
               </h2>
               <form ref={form} onSubmit={sendEmail}>
                 <div className="card-body mt-0 pt-2">
@@ -95,6 +96,4 @@ const ContuctMe = () => {
       </div>
     </div>
   );
-};
-
-export default ContuctMe;
+}

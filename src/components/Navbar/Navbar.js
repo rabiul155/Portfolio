@@ -70,10 +70,10 @@ const Navbar = () => {
         </div>
         <HashLink
           smooth
-          to="/#contuctMe"
+          to="/#contact"
           className="btn ml-4 mr-2 sm:mr-0 btn-primary btn-sm"
         >
-          Contuct Me
+          Contact Me
         </HashLink>
       </div>
     </div>

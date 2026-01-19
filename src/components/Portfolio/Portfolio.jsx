@@ -1,20 +1,18 @@
 import React from "react";
-import ContuctMe from "../ContuctMe/ContuctMe";
-import Education from "../Education/Education";
 import Home from "../Home/Home";
-import MyProject from "../MyProject/MyProject";
 import MySkill from "../MySkill/MySkill";
+import MyProject from "../MyProject/MyProject";
+import Education from "../Education/Education";
+import Contact from "../Contact/Contact";
 
-const Window = () => {
+export default function Portfolio() {
   return (
     <div>
       <Home></Home>
       <MySkill></MySkill>
       <MyProject></MyProject>
       <Education></Education>
-      <ContuctMe></ContuctMe>
+      <Contact></Contact>
     </div>
   );
-};
-
-export default Window;
+}
