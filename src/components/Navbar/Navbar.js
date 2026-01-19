@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 import SecondaryButton from "../Shared/SecondaryButton";
-import PrimaryButton from "../Shared/PrimaryButton";
 
 const menuItem = (
   <>

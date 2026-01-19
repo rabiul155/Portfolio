@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect";
 import "./Home.css";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const Home = () => {
   useEffect(() => {
@@ -27,9 +28,9 @@ const Home = () => {
 
           <div className="overflow-hidden">
             <div data-aos="fade-left" className="sm:mt-20">
-              <h1 className="text-4xl font-bold text-center sm:text-left">
+              <h1 className="text-xl font-bold text-center sm:text-left">
                 Hello! I am <br />
-                <span className="text-yellow-500">Rabiul Islam</span>
+                <span className="text-yellow-500 text-4xl">Rabiul Islam</span>
               </h1>
               <div className="py-6 text-xl sm:text-3xl font-bold text-secondary flex justify-center sm:justify-start ">
                 <Typewriter
@@ -50,13 +51,11 @@ const Home = () => {
                 processes. I am Interested in learning the latest web
                 technology. Able to work well in teams as well as individually.
               </p>
-              <a
-                className="flex justify-center sm:justify-start"
-                href={resume}
-                download
-              >
-                <button className="btn btn-primary mt-5">My Resume</button>
-              </a>
+              <div className="py-6">
+                <a href={resume} download>
+                  <PrimaryButton text={"My Resume"} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
