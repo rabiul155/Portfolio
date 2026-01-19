@@ -21,7 +21,7 @@ const menuItem = (
       </HashLink>
     </li>
     <li>
-      <Link to="/about" className=" hover:text-orange-500">
+      <Link to="/#about" className=" hover:text-orange-500">
         About
       </Link>
     </li>
@@ -42,14 +42,14 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-500 font-bold px-2 md:px-20 ${scrolled ? "bg-base-300" : "bg-transparent"}`}
+      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-500 font-bold px-2 md:px-10 ${scrolled ? "bg-base-300" : "bg-transparent"}`}
     >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn py-2 px-1 btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6  w-6"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="btn btn-ghost normal-case text-3xl font-bold text-secondary p-0 "
+          className="btn btn-ghost normal-case text-3xl font-bold text-secondary px-2 "
         >
           Portfolio
         </Link>
@@ -79,12 +79,12 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <div className="hidden lg:flex justify-end">
-          <ul className="menu menu-horizontal px-1 text-[18px]">{menuItem}</ul>
+          <ul className="flex gap-8 px-4 py-3 text-[18px]">{menuItem}</ul>
         </div>
         <HashLink
           smooth
           to="/#contact"
-          className="btn ml-4 mr-2 sm:mr-0 btn-primary btn-sm"
+          className="btn rounded-full px-5 ml-4 mr-2 sm:mr-0 btn-primary btn-sm"
         >
           Contact Me
         </HashLink>
