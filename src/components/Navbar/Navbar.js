@@ -2,26 +2,43 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
+import SecondaryButton from "../Shared/SecondaryButton";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const menuItem = (
   <>
     <li>
-      <HashLink smooth to="/#Home" className=" hover:text-orange-500 ">
+      <HashLink
+        smooth
+        to="/#Home"
+        className="transition-all duration-300 font-bold hover:text-orange-600 "
+      >
         Home
       </HashLink>
     </li>
     <li>
-      <HashLink smooth to="/#skill" className=" hover:text-orange-500">
+      <HashLink
+        smooth
+        to="/#skill"
+        className="transition-all duration-300 font-bold hover:text-orange-600"
+      >
         Skill
       </HashLink>
     </li>
     <li>
-      <HashLink smooth to="/#project" className=" hover:text-orange-500">
+      <HashLink
+        smooth
+        to="/#project"
+        className="transition-all duration-300 font-bold hover:text-orange-600"
+      >
         Projects
       </HashLink>
     </li>
     <li>
-      <Link to="/#about" className=" hover:text-orange-500">
+      <Link
+        to="/#about"
+        className="transition-all duration-300 font-bold hover:text-orange-600"
+      >
         About
       </Link>
     </li>
@@ -42,7 +59,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-500 font-bold px-2 md:px-10 ${scrolled ? "bg-base-300" : "bg-transparent"}`}
+      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-500 font-bold px-2 md:px-36 py-3 ${scrolled ? "bg-base-300" : "bg-transparent"}`}
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -79,14 +96,10 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <div className="hidden lg:flex justify-end">
-          <ul className="flex gap-8 px-4 py-3 text-[18px]">{menuItem}</ul>
+          <ul className="flex gap-8 px-4 py-3 ">{menuItem}</ul>
         </div>
-        <HashLink
-          smooth
-          to="/#contact"
-          className="btn rounded-full px-5 ml-4 mr-2 sm:mr-0 btn-primary btn-sm"
-        >
-          Contact Me
+        <HashLink smooth to="/#contact" className="px-4">
+          <SecondaryButton text={"Contact Me"} />
         </HashLink>
       </div>
     </div>
