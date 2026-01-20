@@ -4,7 +4,7 @@ export default function PrimaryButton({ text, onClick }) {
       onClick={onClick}
       className="
         relative overflow-hidden
-        px-8 pb-2.5 pt-[9px]
+        px-6 md:px-8 pb-2.5 pt-[9px]
         rounded-full
         border-2 border-[#f75023]
         font-semibold text-white

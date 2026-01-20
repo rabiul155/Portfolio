@@ -4,7 +4,7 @@ export default function SecondaryButton({ text, onClick }) {
       onClick={onClick}
       className="
         relative overflow-hidden
-        px-7 pb-2 pt-[7px]
+        px-5 md:px-7 pb-2 pt-[7px]
         rounded-full
         border-2 border-[#f75023]
         font-semibold text-black

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../images/logo.webp";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 import SecondaryButton from "../Shared/SecondaryButton";
@@ -9,7 +10,7 @@ const menuItem = (
     <li>
       <HashLink
         smooth
-        to="/#Home"
+        to="/#home"
         className="transition-all duration-300 font-bold hover:text-orange-600 "
       >
         Home
@@ -58,11 +59,11 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-500 font-bold px-2 md:px-36 py-3 ${scrolled ? "bg-base-300" : "bg-transparent"}`}
+      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-300 font-bold px-2 md:px-36  ${scrolled ? "bg-white py-2" : "bg-transparent py-3"}`}
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn py-2 px-1 btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn px-2 btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7"
@@ -85,12 +86,9 @@ const Navbar = () => {
             {menuItem}
           </ul>
         </div>
-        <Link
-          to="/"
-          className="btn btn-ghost normal-case text-3xl font-bold text-secondary px-2 "
-        >
-          Portfolio
-        </Link>
+        <HashLink smooth to="/#home">
+          <img src={logo} alt="Logo" className="w-28 md:w-32 mx-1" />
+        </HashLink>
       </div>
 
       <div className="navbar-end">
