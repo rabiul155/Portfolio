@@ -4,3 +4,39 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.animation-x {
+  animation: moveX 4s linear infinite;
+}
+
+.animation-y {
+  animation: moveY 4s linear infinite;
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
