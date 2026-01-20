@@ -30,13 +30,10 @@ const Home = () => {
               Hello! I am <br />
               <span className="text-yellow-500 text-4xl">Rabiul Islam</span>
             </h1>
-            <div className="py-6 text-xl sm:text-3xl font-bold text-secondary flex justify-center sm:justify-start ">
+            <div className="py-5 text-xl sm:text-3xl font-bold text-secondary flex justify-center sm:justify-start ">
               <Typewriter
                 options={{
-                  strings: [
-                    "Junior Web Developer!!!",
-                    "MERN Stack Developer!!!",
-                  ],
+                  strings: ["Software Engineer!!!", "Full Stack Developer!!!"],
                   autoStart: true,
                   loop: true,
                 }}
