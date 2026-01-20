@@ -25,7 +25,7 @@ export default function SecondaryButton({ text, onClick }) {
       />
 
       {/* Text */}
-      <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+      <span className="relative z-10 whitespace-nowrap group-hover:text-white transition-colors duration-300">
         {text}
       </span>
     </button>

@@ -24,7 +24,7 @@ export default function PrimaryButton({ text, onClick }) {
       />
 
       {/* Text */}
-      <span className="relative z-10 group-hover:text-black transition-colors duration-300">
+      <span className="relative z-10 whitespace-nowrap group-hover:text-black transition-colors duration-300">
         {text}
       </span>
     </button>

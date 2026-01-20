@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.webp";
 import { HashLink } from "react-router-hash-link";
-import "./Navbar.css";
 import SecondaryButton from "../Shared/SecondaryButton";
 
 const menuItem = (
@@ -93,7 +92,7 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <div className="hidden lg:flex justify-end">
-          <ul className="flex gap-8 px-4 py-3 ">{menuItem}</ul>
+          <ul className="flex gap-8 px-4 py-3">{menuItem}</ul>
         </div>
         <HashLink smooth to="/#contact" className="px-4">
           <SecondaryButton text={"Contact Me"} />
