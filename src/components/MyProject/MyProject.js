@@ -13,7 +13,7 @@ const MyProject = () => {
       </h2>
       <div
         data-aos="fade-up"
-        className="bg-base-200 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"
+        className="bg-base-200 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
       >
         <div className="card hover:shadow-slate-400 card-compact max-w-[400px] mx-auto bg-base-100 shadow-xl">
           <figure>
