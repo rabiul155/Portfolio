@@ -27,15 +27,15 @@ const Home = () => {
       <div className=" py-24 px-4 sm:px-8 flex flex-col md:flex-row items-center justify-center gap-8">
         <div data-aos="fade-right" className="flex-1 flex justify-center">
           <img src={img} className="relative object-cover" alt="" />
-          <div className="absolute top-1/3 right-1 md:right-1/4 animation-y h-8 w-10 md:w-16 md:h-12 flex items-center justify-center rounded-lg bg-white">
+          <div className="absolute hidden lg:flex items-center justify-center top-1/3 right-1 md:right-1/4 animation-y h-8 w-10 md:w-16 md:h-12 rounded-lg bg-white">
             <img src={node} className="" alt="" />
           </div>
 
-          <div className="absolute top-12 left-8 md:left-1/4 animation-y w-8 h-10 md:w-12 md:h-14 flex items-center justify-center rounded-lg bg-orange-800">
+          <div className="absolute hidden lg:flex items-center justify-center top-12 left-8 md:left-1/4 animation-y w-8 h-10 md:w-12 md:h-14  rounded-lg bg-orange-800">
             <img src={database} className="" alt="" />
           </div>
 
-          <div className="absolute bottom-0 right-1/2 animation-y w-8 h-10 md:w-12 md:h-14 flex items-center justify-center rounded-lg bg-blue-200">
+          <div className="absolute hidden lg:flex items-center justify-center bottom-0 right-1/2 animation-y w-8 h-10 md:w-12 md:h-14  rounded-lg bg-blue-200">
             <img src={figmaIcon} className="" alt="" />
           </div>
         </div>
