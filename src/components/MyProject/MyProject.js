@@ -3,12 +3,13 @@ import p1 from "../../images/p1.PNG";
 import p2 from "../../images/p2.PNG";
 import p3 from "../../images/1.PNG";
 import { Link } from "react-router-dom";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const MyProject = () => {
   return (
-    <div className="my-10 px-4" id="project">
-      <h2 className=" text-4xl font-bold text-center m-10 text-secondary">
-        My Project{" "}
+    <div className="py-8 md:py-12 px-4" id="project">
+      <h2 className="text-2xl font-bold text-center py-8 text-brand">
+        My Project
       </h2>
       <div
         data-aos="fade-up"
@@ -21,9 +22,9 @@ const MyProject = () => {
           <div className="card-body">
             <h2 className="card-title">Best Sell BD</h2>
             <p>It is a second hand laptop selling website</p>
-            <div className="card-actions justify-end">
+            <div className="flex justify-end">
               <Link to="/bestSell">
-                <button className="btn btn-primary">View Project</button>
+                <PrimaryButton text={"View Project"} />
               </Link>
             </div>
           </div>
@@ -36,10 +37,9 @@ const MyProject = () => {
           <div className="card-body">
             <h2 className="card-title">PhotoGraphyPro</h2>
             <p>It is an wildlife Photographer website</p>
-            <div className="card-actions justify-end">
+            <div className="flex justify-end">
               <Link to="/photo">
-                {" "}
-                <button className="btn btn-primary">View Project</button>
+                <PrimaryButton text={"View Project"} />
               </Link>
             </div>
           </div>
@@ -52,10 +52,9 @@ const MyProject = () => {
           <div className="card-body">
             <h2 className="card-title">LearnCode</h2>
             <p>It is an Programming language learning website</p>
-            <div className="card-actions justify-end">
+            <div className="flex justify-end">
               <Link to="/learnCode">
-                {" "}
-                <button className="btn btn-primary">View Project</button>
+                <PrimaryButton text={"View Project"} />
               </Link>
             </div>
           </div>

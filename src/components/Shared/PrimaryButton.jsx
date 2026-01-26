@@ -19,7 +19,7 @@ export default function PrimaryButton({ text, onClick }) {
           bg-brand
           transition-transform duration-300 ease-out
           group-hover:translate-y-12  
-          -z-10
+          
         "
       />
 

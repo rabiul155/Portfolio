@@ -3,6 +3,7 @@ import mailbox from "./mailbox.json";
 import Lottie from "lottie-react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
+import SecondaryButton from "../Shared/SecondaryButton";
 
 export default function Contact() {
   const form = useRef();
@@ -30,8 +31,8 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className=" m-4">
-      <h2 className=" text-4xl text-center font-bold text-yellow-400 uppercase p-4">
+    <div id="contact" className=" my-12 mx-4">
+      <h2 className=" text-2xl text-center font-bold text-brand py-8">
         Get In touch
       </h2>
       <div className=" ">
@@ -48,7 +49,7 @@ export default function Contact() {
               data-aos="fade-left"
               className="card mx-8 w-full max-w-md shadow-xl bg-base-100"
             >
-              <h2 className=" text-3xl text-center font-bold text-primary uppercase pt-6">
+              <h2 className=" text-2xl text-center font-bold text-brand pt-6">
                 Contact Me
               </h2>
               <form ref={form} onSubmit={sendEmail}>
@@ -61,7 +62,7 @@ export default function Contact() {
                       name="user_name"
                       type="text"
                       placeholder="Name"
-                      className="input input-bordered"
+                      className="input input-bordered h-10"
                     />
                   </div>
                   <div className="form-control my-1">
@@ -71,8 +72,8 @@ export default function Contact() {
                     <input
                       name="user_email"
                       type="email"
-                      placeholder="email"
-                      className="input input-bordered"
+                      placeholder="Email"
+                      className="input input-bordered h-10"
                     />
                   </div>
                   <div className="form-control my-1">
@@ -86,7 +87,7 @@ export default function Contact() {
                     ></textarea>
                   </div>
                   <div className="form-control mt-6">
-                    <button className="btn btn-primary">Send</button>
+                    <SecondaryButton text={"Send"} />
                   </div>
                 </div>
               </form>

@@ -20,7 +20,7 @@ export default function SecondaryButton({ text, onClick }) {
           transform translate-y-12
           transition-transform duration-300 ease-out
           group-hover:translate-y-0  
-          -z-10
+
         "
       />
 
