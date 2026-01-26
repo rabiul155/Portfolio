@@ -10,8 +10,8 @@ export default function Portfolio() {
   return (
     <div>
       <Home></Home>
-      {/* <About></About> */}
       <MySkill></MySkill>
+      <About></About>
       <MyProject></MyProject>
       <Education></Education>
       <Contact></Contact>
