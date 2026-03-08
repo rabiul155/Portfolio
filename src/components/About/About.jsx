@@ -4,7 +4,7 @@ import SecondaryButton from "../Shared/SecondaryButton";
 
 const About = () => {
   return (
-    <div className="py-12 px-4">
+    <div className="py-12 px-4" id="about">
       <h2 className="text-2xl font-bold text-center py-8 text-brand">
         About Me
       </h2>

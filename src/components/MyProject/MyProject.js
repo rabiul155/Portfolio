@@ -7,7 +7,7 @@ import PrimaryButton from "../Shared/PrimaryButton";
 
 const MyProject = () => {
   return (
-    <div className="py-8 md:py-12 px-4" id="project">
+    <div className="py-6 px-4" id="project">
       <h2 className="text-2xl font-bold text-center py-8 text-brand">
         My Project
       </h2>

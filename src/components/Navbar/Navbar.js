@@ -27,6 +27,15 @@ const menuItem = (
     <li>
       <HashLink
         smooth
+        to="/#experience"
+        className="transition-all duration-300 font-bold hover:text-orange-600"
+      >
+        Experience
+      </HashLink>
+    </li>
+    <li>
+      <HashLink
+        smooth
         to="/#project"
         className="transition-all duration-300 font-bold hover:text-orange-600"
       >
@@ -34,12 +43,13 @@ const menuItem = (
       </HashLink>
     </li>
     <li>
-      <Link
+      <HashLink
+        smooth
         to="/#about"
         className="transition-all duration-300 font-bold hover:text-orange-600"
       >
         About
-      </Link>
+      </HashLink>
     </li>
   </>
 );
@@ -58,7 +68,11 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-300 font-bold px-2 md:px-36  ${scrolled ? "bg-white py-2" : "bg-transparent py-3"}`}
+      className={`navbar fixed top-0 z-50 w-full transition-all ease-linear duration-300 font-bold px-2 md:px-36 ${
+        scrolled
+          ? "bg-white/40 backdrop-blur-lg shadow-lg py-2"
+          : "bg-transparent py-3"
+      }`}
     >
       <div className="navbar-start">
         <div className="dropdown">
