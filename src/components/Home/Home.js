@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import img from "../../images/brand1.png";
 import resume from "./resume.pdf";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import figmaIcon from "../Icons/figma-svgrepo-com.svg";
 import database from "../Icons/database-svgrepo-com.svg";
 import node from "../Icons/node-js-svgrepo-com.svg";
@@ -13,12 +12,6 @@ import PrimaryButton from "../Shared/PrimaryButton";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
-
   return (
     <div
       className="home-section md:h-screen flex items-center justify-center gap-8"

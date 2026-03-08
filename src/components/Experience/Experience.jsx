@@ -1,3 +1,4 @@
+import { FaCity, FaWordpress } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -14,12 +15,11 @@ export default function Experience() {
       <VerticalTimeline>
         {/* GreenBud */}
         <VerticalTimelineElement
+          icon={<FaCity />}
           date="Jan 2024 – Present"
           iconStyle={{ background: "#2563eb", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">
-            Software Developer
-          </h3>
+          <h3 className="font-bold text-lg">Software Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">GreenBud</h4>
 
           <ul className="list-disc ml-5 mt-3 space-y-1">
@@ -48,12 +48,11 @@ export default function Experience() {
 
         {/* Repliq */}
         <VerticalTimelineElement
+          icon={<FaCity />}
           date="May 2023 – Dec 2023"
           iconStyle={{ background: "#16a34a", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">
-            Software Developer (Frontend)
-          </h3>
+          <h3 className="font-bold text-lg">Software Developer (Frontend)</h3>
           <h4 className="vertical-timeline-element-subtitle">Repliq Limited</h4>
 
           <ul className="list-disc ml-5 mt-3 space-y-1">
